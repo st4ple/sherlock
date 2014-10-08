@@ -1,21 +1,8 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.io.*;
+import java.security.*;
+import java.util.*;
 import java.lang.reflect.Array;
 import java.nio.file.Path;
-
 
 public class Sherlock {
     @SuppressWarnings("unchecked")
