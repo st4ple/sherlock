@@ -1,7 +1,7 @@
 Sherlock
 ========
 
-Simple command line tool that indexes and analyzes changes of files and directories for a given root path.
+Simple command line tool that indexes and analyzes changes of files and directories for a given root path. Written in Java.
 
 ## Usage
 
@@ -13,7 +13,7 @@ in terminal.
 
 ### Index mode
 
-To just create an index file containing the absolute path and an md5 hash of each file in the directory located at <path>, run the following command in the terminal:
+To just create an index file containing the absolute path and an md5 hash of each file in the directory located at `<path>`, run the following command in the terminal:
 
     java Sherlock -p <path>
 
@@ -21,13 +21,13 @@ To just create an index file containing the absolute path and an md5 hash of eac
 
 ### Analyze mode
 
-To detect files (in the directory located at `<path>`) that have been modified, deleted or newly created since the index file was updated last, run the follwing command in terminal:
+To detect files in the directory located at `<path>` that have been modified, deleted or newly created since the index file was updated last, run the follwing command in terminal:
 
     java Sherlock -a -p <path>
 
 **Note:** If `-p <path>` is omitted, Sherlock will use the path of the directory it is located as the root path.
 
-**Note:** Before the analyze mode for a directory located at `<path>` can be executed, there must exist an index file in this directory. To initially create this, simply run the index mode beforehand.
+**Note:** Before the analyze mode for a directory located at `<path>` can be executed, there must exist an `index.sk` file in this directory. To initially create this, simply run the index mode beforehand.
 
 ## Ignore file
 
@@ -36,7 +36,7 @@ To specify certain files and diretories to be ignored by the index and analyze m
 ### Syntax
 
 ##### Files
-Lines not ending with / are treated as files. If Sherlock finds a file with the absolute path equal to this line, the file will be ignored.
+Lines not ending with / are treated as files. The file with the absolute path equal to this line will be ignored by Sherlock.
 
 ##### Directories
 Lines ending with / are treated as directories. All the files and subdirectories in this directory will be ignored by Sherlock.
