@@ -1,0 +1,6 @@
+# IMPORTANT: use complete (absolute) path to files and directories
+# HINT: lines beginning with # are NOT parsed or handled by sherlock
+# EXAMPLE: /path/to/file.txt (this exact file gets ignored)
+# EXAMPLE: /path/to/directory/ (all the files and directories within /path/to/directory/ get ignored)
+
+
